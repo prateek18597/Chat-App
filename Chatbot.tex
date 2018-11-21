@@ -1,0 +1,60 @@
+\documentclass[12pt]{extarticle}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{eso-pic}
+\usepackage{datetime}
+\usepackage{lipsum}
+\AddToShipoutPictureBG{%
+\begin{tikzpicture}[overlay,remember picture]
+\draw[line width=6pt]
+    ($ (current page.north west) + (0.8cm,-0.8cm) $)
+    rectangle
+    ($ (current page.south east) + (-0.8cm,0.8cm) $);
+\draw[line width=1.5pt]
+    ($ (current page.north west) + (1.2cm,-1.2cm) $)
+    rectangle
+    ($ (current page.south east) + (-1.2cm,1.2cm) $);
+\end{tikzpicture}
+}
+\usepackage{color}
+\date{}
+\author{\textbf{Pratik Parmar} 2016UCS0049  \\\textbf{Rishabh Kumar} 2016UCS0013}
+\title{\textbf{Design Project\\ Design Document \\ Intelligent Chatbot}}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{Introduction}
+\subsection{Purpose}
+Purpose of this document is provide details about idea and implementation of Intelligent Chatbot.
+\subsection{Scope}
+The application will consist of following functionality:
+\begin{enumerate}
+\item Sentimental analysis of messages.
+\item Artificial Chatbot.
+\item Chatting system to communicate with others.
+\end{enumerate}
+\section{Overall Design}
+This a chatting app where you can communicate with other peoples. This will be able to detect sentiment of user from messages. It will contain an artificial chatbot to communicate with. Sentiment analysis model will be trained on data obtained from twitter,imdb and from sub-titles available for movies etc.
+\section{Software Requirement}
+\begin{enumerate}
+\item \textbf{Database: }Firebase will be used to store messages of users.
+\item \textbf{Ionic and Cordova Framework: } To design an hybrid application to run it across platform.
+\item \textbf{Python: }Keras, tensorflow etc libraries of python will be used to train our model for sentiment analysis.
+\end{enumerate}
+\section{Methodology}
+\subsection{Data Collection}
+\begin{enumerate}
+\item \textbf{Twitter Data: }Tweepy Library of python will be used gather tweets from twitter. 
+\item \textbf{Imdb Data: }Using Scrapy library of python we will gather data from Imdb.
+\item \textbf{Movie Data: }Using subtitles available for movies.
+\end{enumerate}
+\subsection{Structure of Model}
+Many to one RNN will be used along with LSTM. For the purpose of minimization of cost function we will use Adam optimizer.
+Hidden layer will use ReLU as activation function and Output layer will use sigmoid function as activation function.
+Word vector and Paragraph vectors will be used for representation of data. Forward propagation will involve use of beam search so that only limitied number of words are used in the process.
+Sentiwordnet is a dictionary that tells, rather than the meaning, the sentiment polarity of a sentence.Based on the total score we will determine the sentiment.
+\subsection{Implementation of Model}
+First model will be trained then the trained model will be added in the app for testing and usage purpose.
+\end{document}

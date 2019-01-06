@@ -1,0 +1,64 @@
+<!--
+	Generated template for the ChatPage page.
+
+	See http://ionicframework.com/docs/components/#navigation for more info on
+	Ionic pages and navigation.
+-->
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>Chat</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div *ngFor="let message of messages" class="message-wrapper" on-hold="onMessageHold($event, $index, message)">
+		<div *ngIf="user._id !== message.userId">
+			<img (click)="viewProfile()" class="profile-pic left" src="assets/imgs/avatar.png"/>
+			<!--  wave-->
+			<div class="chat-bubble left slide-left">
+
+				<div class="message" [innerHTML]="message.text" autolinker>
+				</div>
+
+				<div class="message-detail">
+					<span (click)="viewProfile()" class="bold">{{toUser.username}}</span>,
+					<!-- <span>{{message.date | moment:"ago" | lowercase}}</span> -->
+				</div>
+
+			</div>
+		</div>
+
+		<div *ngIf="user._id === message.userId">
+			<img (click)="viewProfile()" class="profile-pic right" src="assets/imgs/avatar.png" onerror="onProfilePicError(this)" />
+
+			<div class="chat-bubble right slide-right">
+
+				<div class="message" [innerHTML]="message.text" autolinker>
+				</div>
+
+				<div class="message-detail">
+					<span (click)="viewProfile()" class="bold">{{user.username}}</span>,
+					<!-- <span>{{message.date| moment:"ago" | lowercase}}</span> -->
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="cf"></div>
+
+	</div>
+
+</ion-content>
+
+<ion-footer>
+	<form [formGroup]="messageForm" (submit)="send()" novalidate>
+		<ion-item>
+			<ion-input formControlName="message" [(ngModel)]="chatBox" placeholder="Send a message..."></ion-input>
+			<button ion-button clear (click)=" sendMessage(chatBox)" item-end><ion-icon class="footer-btn" name="send"></ion-icon></button>
+		</ion-item>
+	</form>
+</ion-footer>

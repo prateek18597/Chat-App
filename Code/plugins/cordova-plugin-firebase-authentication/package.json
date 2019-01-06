@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-firebase-authentication",
+        "scope": null,
+        "escapedName": "cordova-plugin-firebase-authentication",
+        "name": "cordova-plugin-firebase-authentication",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/pratik/Documents/MessApp/Mess"
+    ]
+  ],
+  "_from": "cordova-plugin-firebase-authentication@latest",
+  "_id": "cordova-plugin-firebase-authentication@1.0.1",
+  "_inCache": true,
+  "_location": "/cordova-plugin-firebase-authentication",
+  "_nodeVersion": "8.11.2",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/cordova-plugin-firebase-authentication_1.0.1_1529935197859_0.7561193666012112"
+  },
+  "_npmUser": {
+    "name": "chemerisuk",
+    "email": "chemerisuk@gmail.com"
+  },
+  "_npmVersion": "5.6.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-firebase-authentication",
+    "scope": null,
+    "escapedName": "cordova-plugin-firebase-authentication",
+    "name": "cordova-plugin-firebase-authentication",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-firebase-authentication/-/cordova-plugin-firebase-authentication-1.0.1.tgz",
+  "_shasum": "ed5415d694dda05e55418f6b014e83478359e83d",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-firebase-authentication",
+  "_where": "/home/pratik/Documents/MessApp/Mess",
+  "author": {
+    "name": "Maksim Chemerisuk",
+    "email": "chemerisuk@gmail.com",
+    "url": "https://github.com/chemerisuk"
+  },
+  "bugs": {
+    "url": "https://github.com/chemerisuk/cordova-plugin-firebase-authentication/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-firebase-authentication",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova plugin for Firebase Authentication",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-Wistd1sCOqPvcFjjbPjukilpImD+6V4ynebxCCJ+IPQ0vSje4rhSYlz2yBPCA3KtlC2pyHkQ9zugbiSQnvkWCA==",
+    "shasum": "ed5415d694dda05e55418f6b014e83478359e83d",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-firebase-authentication/-/cordova-plugin-firebase-authentication-1.0.1.tgz",
+    "fileCount": 8,
+    "unpackedSize": 33284,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJbMPVdCRA9TVsSAnZWagAA6CIP/21ne7UbHotEvamPpSrF\nbiG2SWdZ9pm6CvsIaDOK9YhpzoqCx6rDXaE2sF2psWSVecfpdQN3Mckjv3xi\nTLgazBeRq75gTIa4KOwo+XV71hB+dpxNs0g3I6ahClpeCexiPc+/soIRRl42\nejpYA7AM+tLKr7uhumPnQ8+FuutKzg+dd4c25V3pri506MpJBsMcJ6CvGIFR\n2pa4vBdlm4Kz1BYBZ8/l6MT1JbXs5fxEcDLJlxv+j1z6IXc7OeMpFyVtlVUJ\nlxYPoZ5ZYQN9Rmpj/RTi57eSa/RS+EvwHa0KfC7QdxiKBSqn7nYo+gDzZ0Cj\ny7udkHhmLB+4KI1OF286G/hPgBKxfB2YCv57jhAwSCqe3PHnAM/VbExFqIR8\nqUk3tX+Z/Ok+6eOHI3nPs99cn8yE7JfQJwVYO4qSX9TbgopSWbjAKI0DwwfA\nb9vrndEV28RGf9BltV19hF/Xb4QBhfIHI1m4F0oiR2je2q7AAPn2JFUzgRiy\n+U1tPfZn1NgO7gIPWToYvRLqlpv/qFv9PA7Asm/wPyUlnz5aCwSEEmeg5BMf\n5/GA8yM8v/OKrTAokZOSZqNvJALoR1ZYbbEn43KjNJmm8Ks+fKKBtTw/QZNY\nRnRXiT77i0XdFfJm5YyXBJYoBWCtpeQFbUYlQqbmaT0SsQKWDqlY2UZz3ItZ\nF1Ql\r\n=nKjC\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "gitHead": "a50273b0ef3c6682b99be7f7fe780c95e88d675b",
+  "homepage": "https://github.com/chemerisuk/cordova-plugin-firebase-authentication#readme",
+  "keywords": [
+    "cordova",
+    "firebase",
+    "authentication",
+    "analytics",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "chemerisuk",
+      "email": "chemerisuk@gmail.com"
+    }
+  ],
+  "name": "cordova-plugin-firebase-authentication",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemerisuk/cordova-plugin-firebase-authentication.git"
+  },
+  "scripts": {
+    "postversion": "git push && git push --tags",
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml"
+  },
+  "version": "1.0.1"
+}

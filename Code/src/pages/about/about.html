@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding color="twitter">
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+  <ion-refresher-content>
+  </ion-refresher-content>
+  </ion-refresher>
+	<ion-card color="secondary" id="card">
+		<div class="dark" id="counter" align="center">{{count}} Students will take meal.</div>
+  	</ion-card>
+</ion-content>
